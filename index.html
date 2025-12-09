@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Josue Diaz Martínez</title>
+
+    <style>
+        :root {
+            --accent: #1f6feb;
+            --text-main: #111827;
+            --text-muted: #6b7280;
+            --bg: #f9fafb;
+            --card-bg: #ffffff;
+            --border: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                sans-serif;
+            background: var(--bg);
+            color: var(--text-main);
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px 16px 40px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 18px;
+            margin-bottom: 28px;
+        }
+
+        .name {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            margin-top: 4px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .top-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 12px;
+        }
+
+        .download-link {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            border-radius: 999px;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            background: transparent;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .download-link:hover {
+            background: rgba(31, 111, 235, 0.06);
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            padding: 16px 18px;
+        }
+
+        p {
+            margin: 4px 0 8px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+            gap: 20px;
+        }
+
+        .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-muted);
+            margin-bottom: 2px;
+        }
+
+        .contact-item {
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 6px;
+        }
+
+        .tag {
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            margin-top: 32px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header>
+            <div class="name">Josue Diaz Martínez</div>
+            <div class="subtitle">Estudiante de Ingeniería en Robótica Industrial (9no semestre)</div>
+
+            <div class="top-row">
+                <div style="font-size: 0.9rem; color: var(--text-muted);">
+                    Enfoque en mantenimiento de procesos automatizados y apoyo técnico en laboratorio.
+                </div>
+
+                <!-- Botón para descargar el PDF EXACTO que subas -->
+                <a class="download-link" href="CV Josue Diaz Español.pdf" download>
+                    <span>Descargar CV en PDF</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Objetivo -->
+        <section class="section">
+            <div class="section-title">Objetivo Laboral</div>
+            <div class="card">
+                <p>
+                    Aplicar mis conocimientos técnicos y habilidades para contribuir al desarrollo y éxito de proyectos
+                    innovadores en el campo de la robótica industrial, en el sector público o privado, con enfoque en el
+                    mantenimiento físico de procesos automatizados.
+                </p>
+            </div>
+        </section>
+
+        <!-- Layout en dos columnas -->
+        <section class="section grid-2">
+            <!-- Columna izquierda -->
+            <div>
+                <!-- Experiencia -->
+                <div class="section">
+                    <div class="section-title">Experiencia</div>
+                    <div class="card">
+                        <p><strong>Diciembre 2024 – Julio 2025</strong></p>
+                        <p><strong>Servicio social – ESIME Azcapotzalco (IPN)</strong></p>
+                        <p>
+                            Apoyo técnico al encargado del almacén del laboratorio de eléctrica. Actividades principales:
+                        </p>
+                        <ul>
+                            <li>Mantenimiento a equipos del laboratorio.</li>
+                            <li>Preparación de materiales para los alumnos.</li>
+                            <li>Apoyo general en la operación del laboratorio.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Formación -->
+                <div class="section">
+                    <div class="section-title">Formación Académica</div>
+                    <div class="card">
+                        <p><strong>Ingeniería en Robótica Industrial</strong></p>
+                        <p>ESIME Azcapotzalco – Instituto Politécnico Nacional</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            2021 – 2025 | 9no semestre
+                        </p>
+
+                        <hr style="border: none; border-top: 1px solid var(--border); margin: 12px 0;" />
+
+                        <p><strong>Técnico en Máquinas con Sistemas Automatizados</strong></p>
+                        <p>CECyT No. 2 “Miguel Bernard” – IPN</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            2017 – 2021
+                        </p>
+
+                        <hr style="border: none; border-top: 1px solid var(--border); margin: 12px 0;" />
+
+                        <p><strong>Certificación</strong></p>
+                        <p>Cinturón Blanco Lean Six Sigma</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div>
+                <!-- Datos de contacto -->
+                <div class="section">
+                    <div class="section-title">Contacto</div>
+                    <div class="card">
+                        <div class="label">Dirección</div>
+                        <div class="contact-item">
+                            Víctor Hernández, Unidad Presidente Madero, H-5, depto 103, Azcapotzalco, 02430, CDMX
+                        </div>
+
+                        <div class="label" style="margin-top: 10px;">Teléfono</div>
+                        <div class="contact-item">56-12-07-85-29</div>
+
+                        <div class="label" style="margin-top: 10px;">Correo</div>
+                        <div class="contact-item">josue.md172@gmail.com</div>
+                    </div>
+                </div>
+
+                <!-- Software -->
+                <div class="section">
+                    <div class="section-title">Software</div>
+                    <div class="card">
+                        <ul>
+                            <li>Word – Intermedio</li>
+                            <li>Excel – Básico</li>
+                            <li>PowerPoint – Intermedio</li>
+                            <li>SolidWorks – Básico</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Habilidades blandas -->
+                <div class="section">
+                    <div class="section-title">Habilidades</div>
+                    <div class="card">
+                        <ul>
+                            <li>Facilidad para trabajar en equipo</li>
+                            <li>Resiliencia para trabajar bajo presión</li>
+                            <li>Responsabilidad para cumplir metas</li>
+                            <li>Disposición para aprender cosas nuevas</li>
+                            <li>Comunicación asertiva</li>
+                            <li>Apertura para escuchar opiniones de otros</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Idiomas e intereses -->
+                <div class="section">
+                    <div class="section-title">Idioma e Intereses</div>
+                    <div class="card">
+                        <div class="label">Idioma</div>
+                        <p>Inglés – Intermedio</p>
+
+                        <div class="label" style="margin-top: 10px;">Intereses</div>
+                        <div class="tag-list">
+                            <span class="tag">Deportes</span>
+                            <span class="tag">Aprender cosas nuevas</span>
+                            <span class="tag">Control de procesos automatizados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            CV en línea · Josue Diaz Martínez
+        </footer>
+    </main>
+</body>
+</html>
